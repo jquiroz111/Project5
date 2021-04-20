@@ -52,3 +52,21 @@ def prime_response():
         resp = False
     
     return "{num} is Prime: {resp}"
+
+# Posting to a Slack channel
+def slack_message(text):
+    from urllib import request, parse
+    import json
+
+    post = {"text": "{0}".format(text)}
+
+    try:
+        json_data = json.dumps(post)
+        req = request.Request("https://hooks.slack.com/services/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",
+                              data=json_data.encode('ascii'),
+                              headers={'Content-Type': 'application/json'}) 
+        resp = request.urlopen(req)
+    except Exception as em:
+        print("EXCEPTION: " + str(em))
+
+slack_message('Howdy Slack Alert Here!')
