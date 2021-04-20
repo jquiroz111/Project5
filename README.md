@@ -1,5 +1,12 @@
-# Project7
+# GroupProject7: Building and testing API clients
+-Building a command line interface that interacts with your API 
 
-Last project we had extended the Python API to return a JSON payload that returned the values: key, value, command, result, and error. If successful, the boolean woudl declare it to be true and if not then false. Then we deployed our API. 
+-Writing an automated testing suite so you can modify your API while still guaranteeing that other clients won’t break
 
-For Project 7, we were to build a command line interface that can test and run the deployed API when called. In addition we began testing to transition our code from being a manual step to potentially being automated.
+(From the commands instructed in Group Project 5)
+In this project, we will allow the user to:
+1. Return the MD5 hash of a user input string
+2. Return the factorial of a user input integer
+3. Return an array of Fibonacci numbers that are less than and equal to the user input integer
+4. Return a boolean value on whether the user input integer is prime or not
+5. Return a boolean value on whether a value of an input was posted successfully on the class Slack or not

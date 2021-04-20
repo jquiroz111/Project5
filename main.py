@@ -32,6 +32,7 @@ def factoral_response():
            factorial = factorial*i
        print("The factorial of number:",factorial)  
     '''@app.route('/fibonacci/')
+
 def fibonacci_response():
     num = input('Input: ')
     return "Output: {resp}"
